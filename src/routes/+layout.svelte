@@ -1,6 +1,15 @@
 <script lang="ts">
 	import '../app.css';
-	let { children } = $props();
+	import Navigation from '../components/Navigation.svelte';
+	const { children } = $props();
 </script>
 
-{@render children()}
+<svelte:head>
+	<title>Spaceness</title>
+</svelte:head>
+
+<div class="mocha m-auto my-10 w-4/5">
+	<Navigation />
+
+	{@render children()}
+</div>

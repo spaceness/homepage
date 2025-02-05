@@ -11,12 +11,15 @@ importers:
       '@catppuccin/tailwindcss':
         specifier: ^0.1.6
         version: 0.1.6(tailwindcss@3.4.17)
+      '@icons-pack/svelte-simple-icons':
+        specifier: ^4.0.2
+        version: 4.0.2(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.7)(vite@6.0.11(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.19.7)(vite@6.0.11(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.19.7)
       chart.js:
         specifier: ^4.4.7
         version: 4.4.7
-      simple-icons:
-        specifier: ^14.5.0
-        version: 14.5.0
+      lucide-svelte:
+        specifier: ^0.474.0
+        version: 0.474.0(svelte@5.19.7)
     devDependencies:
       '@eslint/compat':
         specifier: ^1.2.5
@@ -490,6 +493,13 @@ packages:
   '@humanwhocodes/retry@0.4.1':
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
+
+  '@icons-pack/svelte-simple-icons@4.0.2':
+    resolution: {integrity: sha512-wtxsxSv2mSdpbSQmdI+7p5M9scgBQiJhmhHwtWBvey5n5cHNSvjxNkYFx14jR1RRHsVpTI7/6S1oFDi9Sxp1Ew==}
+    engines: {node: '>=20', pnpm: '>=9'}
+    peerDependencies:
+      '@sveltejs/kit': ^2.5.0
+      svelte: ^4.2.0 || ^5.0.0
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1222,6 +1232,11 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
+  lucide-svelte@0.474.0:
+    resolution: {integrity: sha512-yOSqjXPoEDOXCceBIfDaed6RinOvhp03ShiTXH6O+vlXE/NsyjQpktL8gm2vGDxi9d81HMuPFN1dwhVURh6mGg==}
+    peerDependencies:
+      svelte: ^3 || ^4 || ^5.0.0-next.42
+
   magic-string@0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
 
@@ -1583,10 +1598,6 @@ packages:
   signal-exit@4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
-
-  simple-icons@14.5.0:
-    resolution: {integrity: sha512-Jn68BKShJ1KHV28ayiV4PCLZV2XK0xVfT6i3AtW6PuMT3S9jILezgOQXCOKj4Y9GasjZYqHbkSvOHCePCVxfyA==}
-    engines: {node: '>=0.12.18'}
 
   sirv@3.0.0:
     resolution: {integrity: sha512-BPwJGUeDaDCHihkORDchNyyTvWFhcusy1XMmhEVTQTwGeybFbp8YEmB+njbPnth1FibULBSBVwCQni25XlCUDg==}
@@ -2099,6 +2110,11 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.1': {}
+
+  '@icons-pack/svelte-simple-icons@4.0.2(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.7)(vite@6.0.11(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.19.7)(vite@6.0.11(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.19.7)':
+    dependencies:
+      '@sveltejs/kit': 2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.7)(vite@6.0.11(jiti@1.21.7)(yaml@2.7.0)))(svelte@5.19.7)(vite@6.0.11(jiti@1.21.7)(yaml@2.7.0))
+      svelte: 5.19.7
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -2850,6 +2866,10 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
+  lucide-svelte@0.474.0(svelte@5.19.7):
+    dependencies:
+      svelte: 5.19.7
+
   magic-string@0.25.9:
     dependencies:
       sourcemap-codec: 1.4.8
@@ -3138,8 +3158,6 @@ snapshots:
   shebang-regex@3.0.0: {}
 
   signal-exit@4.1.0: {}
-
-  simple-icons@14.5.0: {}
 
   sirv@3.0.0:
     dependencies:

@@ -11,7 +11,7 @@
 	<Members />
 	<article class="my-4">
 		<h1 class="mb-1 text-xl font-bold italic">Repositories</h1>
-		<div class="flex flex-row gap-2">
+		<div class="flex flex-row flex-wrap gap-2">
 			<Repo repo="stardust" />
 			<Repo repo="starlight" />
 			<Repo repo="peersocket" />

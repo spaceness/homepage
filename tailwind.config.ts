@@ -1,16 +1,16 @@
-import type { Config } from "tailwindcss";
-import catppuccin from "@catppuccin/tailwindcss";
+import type { Config } from 'tailwindcss';
+import catppuccin from '@catppuccin/tailwindcss';
 
 export default {
-	content: ["./src/**/*.{html,js,svelte,ts}"],
+	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {},
+		extend: {}
 	},
 
 	plugins: [
 		catppuccin({
-			defaultFlavour: "mocha",
-		}),
-	],
+			defaultFlavour: 'mocha'
+		})
+	]
 } satisfies Config;

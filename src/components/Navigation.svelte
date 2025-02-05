@@ -20,7 +20,7 @@
 </script>
 
 <div
-	class="nav mb-4 flex flex-row items-center justify-between gap-3 rounded-md border-b-[3px] border-b-text p-3 pb-3"
+	class="mb-4 flex flex-row items-center justify-between gap-3 rounded-md border-b-[3px] border-b-text p-3 pb-3 shadow-md shadow-text"
 >
 	<div class="flex flex-row">
 		<a href="/" class="transition-all duration-75 hover:scale-105">
@@ -39,9 +39,3 @@
 		{/each}
 	</div>
 </div>
-
-<style>
-	.nav {
-		box-shadow: 0 10px 30px 0px rgba(255, 255, 255, 0.1);
-	}
-</style>

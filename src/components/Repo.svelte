@@ -21,7 +21,7 @@
 			</a>
 			<a
 				class="flex flex-row items-center gap-2 font-medium text-blue duration-300 hover:text-teal active:text-red"
-				href={data.stargazers_url}
+				href={data.forks_url}
 			>
 				<GitFork class="size-4" />
 				{data.forks_count}

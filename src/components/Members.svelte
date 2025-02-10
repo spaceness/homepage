@@ -37,7 +37,7 @@
 			href: 'https://appleflyer.xyz',
 			pfp: '/profiles/appleflyer.webp'
 		},
-		{ name: 'spark', href: 'https://zirc.lol', pfp: 'https://github.com/lolzthedev.png' }
+		{ name: 'port', href: 'https://port22.exposed', pfp: 'https://github.com/port22exposed.png' }
 	].sort((a, b) => a.name.localeCompare(b.name));
 </script>
 

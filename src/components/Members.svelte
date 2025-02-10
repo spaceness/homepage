@@ -32,6 +32,11 @@
 			href: 'https://github.com/genericness',
 			pfp: 'https://github.com/genericness.png'
 		},
+		{
+			name: 'appleflyer',
+			href: 'https://appleflyer.xyz',
+			pfp: '/profiles/appleflyer.webp'
+		},
 		{ name: 'spark', href: 'https://zirc.lol', pfp: 'https://github.com/lolzthedev.png' }
 	].sort((a, b) => a.name.localeCompare(b.name));
 </script>

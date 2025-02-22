@@ -39,6 +39,5 @@
 		"@icons-pack/svelte-simple-icons": "^4.0.2",
 		"chart.js": "^4.4.7",
 		"lucide-svelte": "^0.474.0"
-	},
-	"packageManager": "pnpm@9.4.0"
+	}
 }

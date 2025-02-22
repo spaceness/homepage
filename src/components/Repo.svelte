@@ -2,9 +2,19 @@
 	import { GitFork, Link, Star } from 'lucide-svelte';
 	import CommitGraph from './CommitGraph.svelte';
 	export let repo: string;
+
+	interface Repo {
+		description: string;
+		stargazers_count: number;
+		name: string;
+		forks_count: number;
+		homepage?: string;
+	};
 </script>
 
-<div class="flex min-h-[12rem] max-w-[30rem] flex-row gap-2 rounded-md bg-mantle p-4">
+<div
+	class="mb-0 flex min-h-[12rem] max-w-[30rem] flex-row gap-2 rounded-md border-b-[3px] border-b-mauve bg-mantle p-3 pb-0 pr-0"
+>
 	<section>
 		{#await fetch(`https://api.github.com/repos/spaceness/${repo}`).then( (res) => res.json() ) then data}
 			<a
@@ -39,7 +49,7 @@
 			<p>Error loading repository information</p>
 		{/await}
 	</section>
-	<section class="w-1/2">
+	<section class="ml-3 mt-auto w-1/2">
 		<CommitGraph {repo} />
 	</section>
 </div>

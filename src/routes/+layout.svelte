@@ -12,6 +12,13 @@
 	/>
 </svelte:head>
 
+<img
+	src="/icon.svg"
+	alt="background"
+	width="364"
+	class="absolute -bottom-2 -right-10 -z-20 opacity-25"
+/>
+
 <div class="mocha m-auto my-10 w-4/5">
 	<Navigation />
 

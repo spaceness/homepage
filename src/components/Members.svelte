@@ -38,7 +38,7 @@
 			pfp: '/profiles/appleflyer.webp'
 		},
 		{ name: 'port', href: 'https://port22.exposed', pfp: 'https://github.com/port22exposed.png' }
-	].sort((a, b) => a.name.localeCompare(b.name));
+	].sort((a, b) => a.name.localeCompare(b.name)).reverse();
 </script>
 
 <article class="my-4">

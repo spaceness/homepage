@@ -6,29 +6,27 @@
 
 	let chartCanvas: HTMLCanvasElement;
 
-	const fetchCommits = async () => {
-		const response = await fetch(
-			`https://api.github.com/repos/spaceness/${repo}/commits?per_page=100`
-		);
-		const commits = await response.json();
-
-		// Process commits into a daily count
-		const counts: Record<string, number> = {};
-		for (const commit of commits) {
-			const date = commit.commit.author.date.split('T')[0];
-			counts[date] = (counts[date] || 0) + 1;
-		}
-
-		return Object.entries(counts)
-			.map(([date, count]) => ({
-				date,
-				count
-			}))
-			.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
-	};
-
 	onMount(async () => {
-		const commitsData = await fetchCommits();
+		const commitsData = await (async () => {
+			const response = await fetch(
+				`https://api.github.com/repos/spaceness/${repo}/commits?per_page=100`
+			);
+			const commits = await response.json();
+
+			// Process commits into a daily count
+			const counts: Record<string, number> = {};
+			for (const commit of commits) {
+				const date = commit.commit.author.date.split('T')[0];
+				counts[date] = (counts[date] || 0) + 1;
+			}
+
+			return Object.entries(counts)
+				.map(([date, count]) => ({
+					date,
+					count
+				}))
+				.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+		})();
 
 		new Chart(chartCanvas, {
 			type: 'line',

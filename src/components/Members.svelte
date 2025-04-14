@@ -32,7 +32,6 @@
 			href: 'https://github.com/genericness',
 			pfp: 'https://github.com/genericness.png'
 		},
-		{ name: 'port', href: 'https://port22.exposed', pfp: 'https://github.com/port22exposed.png' }
 	]
 		.sort((a, b) => a.name.localeCompare(b.name))
 		.reverse();

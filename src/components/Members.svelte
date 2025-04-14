@@ -13,11 +13,6 @@
 			pfp: 'https://github.com/incognitotgt.png'
 		},
 		{
-			name: 'proudparrot2',
-			href: 'https://proudparrot2.com',
-			pfp: 'https://github.com/proudparrot2.png'
-		},
-		{
 			name: 'kas',
 			href: 'https://github.com/truekas',
 			pfp: 'https://github.com/truekas.png'

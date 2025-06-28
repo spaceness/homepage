@@ -17,6 +17,7 @@
 			href: 'https://github.com/truekas',
 			pfp: 'https://github.com/truekas.png'
 		},
+/*
 		{
 			name: 'adigitalmoon',
 			href: 'https://discord.com/users/718516822747381852',
@@ -27,6 +28,12 @@
 			href: 'https://github.com/genericness',
 			pfp: 'https://github.com/genericness.png'
 		},
+*/
+		{
+			name: 'proudparrot2',
+			href: 'https://github.com/proudparrot2',
+			pfp: 'https://github.com/proudparrot2.png'
+		}
 	]
 		.sort((a, b) => a.name.localeCompare(b.name))
 		.reverse();
